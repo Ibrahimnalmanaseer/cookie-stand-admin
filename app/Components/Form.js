@@ -107,7 +107,7 @@ export default function Form() {
             
           </form>
 
-          <section className="w-full pt-10 text-center shadow-lg shadow-black-50">
+          {/* <section className="w-full pt-10 text-center shadow-lg shadow-black-50">
             {data.length > 0 &&
               data.map((item, index) => {
                 return (
@@ -119,7 +119,7 @@ export default function Form() {
                   </div>
                 );
               })}
-          </section>
+          </section> */}
         </div>
       </div>
     </div>
