@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
           <Header />
         </header>
 
-        <main class="static ...">{children}</main>
+        <main className="static ...">{children}</main>
 
         <footer>
           <Footer />

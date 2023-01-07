@@ -23,7 +23,7 @@ export default function Form() {
   }
 
   return (
-    <div className="bg-slate-100 h-screen">
+    <div className="bg-slate-100 ">
       <div className="flex flex-col bg-slate-200 w-full pt-28 items-center justify-center">
         <div className="form">
           <form
@@ -49,7 +49,7 @@ export default function Form() {
               <div className="md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
                   className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
-                  for="minCustomer"
+                  htmlhtmlfor="minCustomer"
                 >
                   Minimum Customers per Hour
                 </label>
@@ -63,7 +63,7 @@ export default function Form() {
               <div className="md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
                   className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
-                  for="maxCustomer"
+                  htmlhtmlfor="maxCustomer"
                 >
                   Maximum Customers per Hour
                 </label>
@@ -77,7 +77,7 @@ export default function Form() {
               <div className="md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
                   className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
-                  for="avgCookies"
+                  htmlhtmlfor="avgCookies"
                 >
                   AVERAGE COOKIES PER SALE
                 </label>
@@ -98,7 +98,7 @@ export default function Form() {
 
             <div>
         <button
-          class="hover:shadow-form rounded-md bg-slate-500 py-3 px-8 text-base font-semibold text-white outline-none"
+          className="hover:shadow-form rounded-md bg-slate-500 py-3 px-8 text-base font-semibold text-white outline-none"
         >
           Submit
         </button>
