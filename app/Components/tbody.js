@@ -2,7 +2,7 @@
 
 export default function TBody({records}){
 
-    {
+        
 
         let total=0
         Object.keys(records).map((key)=>{
@@ -17,7 +17,7 @@ export default function TBody({records}){
     
                 
         
-    }
+    
 
 }
 

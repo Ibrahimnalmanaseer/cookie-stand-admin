@@ -1,39 +1,37 @@
-export default function TFoot({jsonData}){
+export default function TFoot({ jsonData }) {
+  let result = {};
+  let total=0
+  jsonData &&
+    jsonData.map((item) => {
+      let sale = item.time_sale;
 
-    let result={}
+      Object.keys(sale).map((key) => {
+        if (result[key]) {
+          result[key] += sale[key];
+        } else {
+          result[key] = sale[key];
+        }
+      });
+    });
 
-    jsonData &&jsonData.map((item) => {
-        let sale = item.time_sale;
+  return (
+    <tr className="whitespace-nowrap">
+      <td className="px-6 py-4">Total</td>
+      {Object.keys(result).map((key) => (
+        <td className="px-6 py-4" key={key}>{result[key]}</td>
+      ))}
 
-        Object.keys(sale).map((key) => {
-          if (result[key]) {
-            result[key] += sale[key];
-          } else {
-            result[key] = sale[key];
-          }
-          
-        });
-
-
-
-        
-
-      })
-
-       
-        
-    Object.keys(result).map((key)=>{
+      
+      {Object.keys(result).map((key)=>{
     
-        return <td className="px-6 py-4" >{result[key]}</td>
+            total+=result[key]
             
         })
-    
-        
-    
-            
-    
-                
-        
-    }
 
 
+    
+      }
+        <td className="px-6 py-4">{total}</td>    
+    </tr>
+  );
+}
