@@ -15,7 +15,7 @@ export default function TFoot({ jsonData }) {
     });
 
   return (
-    <tr className="whitespace-nowrap">
+    <tr className="whitespace-nowrap dark:bg-slate-600 dark:text-white">
       <td className="px-6 py-4">Total</td>
       {Object.keys(result).map((key) => (
         <td className="px-6 py-4" key={key}>{result[key]}</td>

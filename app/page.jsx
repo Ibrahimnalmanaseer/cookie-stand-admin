@@ -1,8 +1,8 @@
 "use client";
 
 import { Inter } from "@next/font/google";
-import CookieStandAdmin from "./Components/CookieStandAdmin";
-import Form from "./Components/Form";
+import CookieStandAdmin from "./components/CookieStandAdmin";
+import Form from "./components/Form";
 
 
 const inter = Inter({ subsets: ["latin"] });
