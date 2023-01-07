@@ -4,8 +4,7 @@
 
 import React, {useState,createContext}from "react";
 
-import CreateForm from "./CreateForm";
-import Header from "./Header";
+import ReportTable from "./ReportTable";
 
 export const ClickContext = React.createContext();
 
@@ -26,7 +25,7 @@ export default function CookieStandAdmin() {
     <button  className="hover:shadow-form rounded-md bg-slate-500 py-3 px-8 text-base font-semibold text-white outline-none" onClick={handleClick}> View Data</button>
     </div>
     
-    <CreateForm/>
+    <ReportTable/>
     </ClickContext.Provider>
 
 
