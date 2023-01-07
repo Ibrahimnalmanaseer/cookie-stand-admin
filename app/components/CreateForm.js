@@ -8,13 +8,13 @@ export default function CreateForm() {
   const [jsonData, setJsonData] = useState(data);
 
   return (
-    <div className="container flex justify-center mx-auto">
+    <div className="container flex justify-center mx-auto dark:bg-slate-800 ">
       <div className="flex flex-col">
         <div className="w-full">
           <div className="border-b border-gray-200 shadow">
-            <table>
+            <table >
               <thead className="bg-gray-50">
-                <tr>
+                <tr className="dark:bg-slate-800">
                   <th className="px-6 py-2 text-xs text-gray-500">Location</th>
                   <th className="px-6 py-2 text-xs text-gray-500">6am</th>
                   <th className="px-6 py-2 text-xs text-gray-500">7am</th>
@@ -26,7 +26,6 @@ export default function CreateForm() {
                   <th className="px-6 py-2 text-xs text-gray-500">1pm</th>
                   <th className="px-6 py-2 text-xs text-gray-500">2pm</th>
                   <th className="px-6 py-2 text-xs text-gray-500">3pm</th>
-
                   <th className="px-6 py-2 text-xs text-gray-500">4pm</th>
                   <th className="px-6 py-2 text-xs text-gray-500">5pm</th>
                   <th className="px-6 py-2 text-xs text-gray-500">6pm</th>
@@ -39,7 +38,7 @@ export default function CreateForm() {
                 {jsonData &&
                   jsonData.map((item) => {
                     return (
-                      <tr className="whitespace-nowrap" key={item.id}>
+                      <tr className="whitespace-nowrap dark:bg-slate-600 dark:text-white" key={item.id}>
                         <td className="px-6 py-4">{item.location}</td>
 
                         {Object.keys(item.time_sale).map((key) => {

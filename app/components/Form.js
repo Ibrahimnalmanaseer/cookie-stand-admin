@@ -23,23 +23,23 @@ export default function Form() {
   }
 
   return (
-    <div className="bg-slate-100 ">
-      <div className="flex flex-col bg-slate-200 w-full pt-28 items-center justify-center">
+    <div className="bg-slate-100  ">
+      <div className="flex flex-col bg-slate-200 w-full pt-28 items-center justify-center ">
         <div className="form">
           <form
-            className="bg-white rounded-md py-10 px-12 shadow-lg"
+            className="bg-white rounded-md py-10 px-12 shadow-lg dark:bg-slate-800"
             onSubmit={handleSubmit}
           >
-            <h1 className="text-xl mt-2 text-center font-semibold text-gray-600">
+            <h1 className="text-xl mt-2 text-center font-semibold text-gray-600 dark:text-white">
               Create Cookie Stand
             </h1>
 
-            <div className="relative w-full mb-3 mt-8">
+            <div className="relative w-full mb-3 mt-8 dark:text-white">
               <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2">
                 Location
               </label>
               <input
-                name="location"
+                name="location "
                 type="text"
                 className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                 placeholder="Location"
@@ -48,7 +48,7 @@ export default function Form() {
             <div className="-mx-3 md:flex mb-2">
               <div className="md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
-                  className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                  className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2 dark:text-white"
                   htmlhtmlfor="minCustomer"
                 >
                   Minimum Customers per Hour
@@ -62,13 +62,13 @@ export default function Form() {
               </div>
               <div className="md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
-                  className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                  className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2 dark:text-white"
                   htmlhtmlfor="maxCustomer"
                 >
                   Maximum Customers per Hour
                 </label>
                 <input
-                  className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4"
+                  className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 dark:text-white"
                   id="maxCustomer"
                   type="number"
                   placeholder="max"
@@ -76,7 +76,7 @@ export default function Form() {
               </div>
               <div className="md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
-                  className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                  className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2 dark:text-white"
                   htmlhtmlfor="avgCookies"
                 >
                   AVERAGE COOKIES PER SALE
