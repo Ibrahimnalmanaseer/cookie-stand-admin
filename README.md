@@ -1,4 +1,4 @@
-# Lab - Class 32 - 33
+# Lab - Class 32 - 33 -34
 
 ## Project: Cookie Stand Admin
 
@@ -15,8 +15,8 @@ Json data generator on Next.js,usinf Tailwind for styling.
 
 - [Repository](https://github.com/Ibrahimnalmanaseer/cookie-stand-admin)
 - [V2 PR 1](https://github.com/Ibrahimnalmanaseer/cookie-stand-admin/pull/1)
-- [V2 PR 2](https://github.com/Ibrahimnalmanaseer/cookie-stand-admin/pull/3)
-
+- [PR Lab(33)](https://github.com/Ibrahimnalmanaseer/cookie-stand-admin/pull/3)
+- [PR Lab(34)](https://github.com/Ibrahimnalmanaseer/cookie-stand-admin/pull/4)
 
 
 
