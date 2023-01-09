@@ -6,17 +6,22 @@ import { AuthContext } from "./contexts/auth";
 import { useContext } from "react";
 import Login from "./components/Login";
 const inter = Inter({ subsets: ["latin"] });
-const {tokens}= useContext(AuthContext)
+
 export default function Home() {
+  const {tokens}= useContext(AuthContext)
+
   return (
      
      
      
     
+   
+
+   tokens?<CookieStandAdmin/>:<Login/>
+   
+   
      
-    !tokens && <Login/>
-     
-    
+   
      
    
     
