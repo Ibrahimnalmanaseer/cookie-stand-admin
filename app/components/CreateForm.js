@@ -35,23 +35,8 @@ export default function CreateForm() {
               </thead>
 
               <tbody className="bg-white">
-                {jsonData &&
-                  jsonData.map((item) => {
-                    return (
-                      <tr className="whitespace-nowrap dark:bg-slate-600 dark:text-white" key={item.id}>
-                        <td className="px-6 py-4">{item.location}</td>
-
-                        {Object.keys(item.time_sale).map((key) => {
-                          return (
-                            <td className="px-6 py-4">{item.time_sale[key]}</td>
-                          );
-                        })}
-
-                        <TBody records={item.time_sale} />
-                      </tr>
-                    );
-                  })}
-
+             
+                <TBody jsonData={jsonData} />
                 <TFoot jsonData={jsonData} />
               </tbody>
             </table>
