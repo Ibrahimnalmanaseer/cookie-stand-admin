@@ -2,10 +2,13 @@ import { createContext, useEffect, useState } from 'react';
 
 export const ThemeContext = createContext();
 
+
+
 export default function ThemeWrapper({ children }) {
   // Get the current theme from local storage
   const currentTheme = localStorage.getItem('theme');
   const [isDarkTheme, setIsDarkTheme] = useState(currentTheme === 'dark');
+  const [clicked, setClicked] = useState(true);
 
   function initialThemeHandle() {
     // If the theme is dark, add the dark class to the body element
@@ -13,6 +16,10 @@ export default function ThemeWrapper({ children }) {
       document.querySelector('body').classList.add('dark');
     }
   }
+  function handleClick () {
+    setClicked(!clicked);
+  };
+
 
   function toggleThemeHandler() {
     // Toggle the theme state
@@ -26,12 +33,17 @@ export default function ThemeWrapper({ children }) {
   }
 
   const globalState = {
-    isDarkTheme: true,
+    isDarkTheme,
     toggleThemeHandler,
+    clicked,
+    handleClick
   };
 
   useEffect(() => {
-    initialThemeHandle();
+    initialThemeHandle()  
+
+   
+
   });
 
   return (
