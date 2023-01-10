@@ -39,9 +39,9 @@ export default function Login(){
       
       e.preventDefault()
 
-      console.log(UserName)
-      login({'username':UserName,
-            'password':PassWord
+     
+      login({"username":UserName,
+      "password":PassWord
     }
       )
     
