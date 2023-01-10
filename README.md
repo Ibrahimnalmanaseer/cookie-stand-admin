@@ -17,6 +17,7 @@ Json data generator on Next.js,usinf Tailwind for styling.
 - [V2 PR 1](https://github.com/Ibrahimnalmanaseer/cookie-stand-admin/pull/1)
 - [PR Lab(33)](https://github.com/Ibrahimnalmanaseer/cookie-stand-admin/pull/3)
 - [PR Lab(34)](https://github.com/Ibrahimnalmanaseer/cookie-stand-admin/pull/4)
+-[PR Lab(35)](https://github.com/Ibrahimnalmanaseer/cookie-stand-admin/pull/7)
 
 
 
