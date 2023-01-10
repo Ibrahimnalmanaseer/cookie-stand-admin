@@ -26,7 +26,7 @@ export default function AuthWrapper({children}){
         const url='http://34.205.156.241:8000/api/token/'
         try {
         const res= await axios.post(url,userInfo)
-        console.log(res.data)
+        
         setGlobalState({
 
             tokens:res.data,
