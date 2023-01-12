@@ -2,7 +2,7 @@
 
 
 
-import {createContext,useState} from 'react';
+import {createContext,useEffect,useState} from 'react';
 import axios from 'axios'
 
 
@@ -13,32 +13,45 @@ export default function AuthWrapper({children}){
 
     const[globalState,setGlobalState]=useState({
 
-        tokens:null,
+        tokens:localStorage.getItem('data')? localStorage.getItem('data'):null,
         login
     })
 
 
 
 
-   async function login(userInfo){
+   function login(userInfo){
 
         
         const url='http://34.205.156.241:8000/api/token/'
         try {
-        const res= await axios.post(url,userInfo)
-        
-        setGlobalState({
+        axios.post(url,userInfo).then((res)=>{
 
-            tokens:res.data,
-            login
+            setGlobalState({
 
+                tokens:res.data,
+                login
+    
+            })
+
+            localStorage.setItem('data',res.data);
+            
         })
+        
+
+        
     }catch(error) {
             console.error(error);
     }
 
     }
     
+
+    
+
+    
+   
+
 
     return (
 
